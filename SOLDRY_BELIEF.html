@@ -19,7 +19,7 @@
                 <li><a href="">TYPE</a></li>
                 <li><a href="">ARTICLE</a></li>
                 <li><a href="SOLDRY_PORTFOLIO.html">PORTFOLIO</a></li>
-                <li><a href="">MAP</a></li>
+                <li><a href="SOLDRY_MAP.html">MAP</a></li>
             </ul>
             <div class="memberlist">
                 <a href=""><img src="IMG\icon_search.png" alt=""></a>
@@ -28,7 +28,7 @@
                 </label> 
                 <a href=""><img src="IMG\icon_member.png" alt=""></a>
                 <a href=""><img src="IMG\icon_heart.png" alt=""></a>
-                <a href=""><img src="IMG\icon_chat.png" alt=""></a>
+                <a href="SOLDRY_CHATBOX.html"><img src="IMG\icon_chat.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -37,23 +37,41 @@
             <h2>FILTER</h2>
             <h3>TYPE</h3>
             <label for="type">
-                <input type="checkbox" value="LENS">LENS<br>
-                <input type="checkbox" value="">CAMERA<br>
-                <input type="checkbox" value="">FLASHLIGHT<br>
-                <input type="checkbox" value="">TRIPODS<br>
-                <input type="checkbox" value="">DRONE<br>
-                <input type="checkbox" value="">ACTION CAMERA<br>
+                <label for="len">
+                    <input id="len" type="checkbox" value="LENS">LENS
+                </label><br>
+                <label for="camera">
+                    <input id="camera" type="checkbox" value="">CAMERA
+                </label><br>
+                <label for="flashlight">
+                    <input id="flashlight" type="checkbox" value="">FLASHLIGHT
+                </label><br>
+                <label for="tripods">
+                    <input id="tripods" type="checkbox" value="">TRIPODS
+                </label><br>
+                <label for="drone">
+                    <input id="drone" type="checkbox" value="">DRONE
+                </label><br>
+                <label for="actioncamera">
+                    <input id="actioncamera" type="checkbox" value="">ACTION CAMERA
+                </label><br>
             </label>
             <h3>CONDITON</h3>
-            <label for="condition">
-                <input type="radio" value="new">NEW<br>
-                <input type="radio" value="used">USED<br>
-            </label>
+            <label for="new">
+                <input name="condition" id="new" type="radio" value="new">NEW
+            </label><br>
+            <label for="used">
+                <input name="condition" id="used" type="radio" value="used">USED
+            </label><br>
+           
             <h3>PRICE</h3>
-            <label for="price">
-                <input type="radio" value="new">HIGH TO LOW<br>
-                <input type="radio" value="used">LOW TO HIGH<br>
-            </label>
+            <label for="htl">
+                <input name="price" id="htl" type="radio" value="htl">HIGH TO LOW
+            </label><br>
+            <label for="lth">
+                <input name="price" id="lth" type="radio" value="lth">LOW TO HIGH
+            </label><br>
+           
         </div>
         <div class="overview">
             <div class="cardlist">

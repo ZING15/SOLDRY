@@ -1,13 +1,16 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.home{
+    width: 100%;
+    background:linear-gradient(to bottom,#111,#555,#333,#555,#333,#444);
 }
 .header{
-    background-color: transparent;
     position: fixed;
     z-index: 2;
-}
+}   
 .header .wrap{
     width: 90%;
     display: flex;
@@ -82,7 +85,8 @@
     content: url(IMG/icon_chat_hover.png);
 }
 .ad{
-    background:linear-gradient(to bottom,#111,#222);
+    max-width: 1400px;
+    margin: auto;
     padding-bottom: 5em;
 }
 .ad .wrap{
@@ -90,6 +94,17 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+.ad .adcontent{
+    width: 100%;
+    overflow: hidden;
+}
+.ad .adswitch label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .ad .item{
     width: 100%;
@@ -145,8 +160,10 @@
 
 
 .belief{
-    background:linear-gradient(to bottom,#222,#333 );;
+    /* background:linear-gradient(to bottom,#222,#333 );; */
     /* padding-bottom: 5em; */
+    max-width: 1400px;
+    margin: auto;
 }
 .belief .wrap{
     width: 90%;
@@ -160,14 +177,6 @@
     padding: 0px 0px 40px;
     position: relative;
 }
-/* .belief .wrap h2::after{
-    content: '';
-    position: absolute;
-    bottom: 1em;
-    width: 100%;
-    height: 1px;
-    background: #fff;
-} */
 .belief .logo{
     display: block;
 }
@@ -220,7 +229,8 @@
 }
 
 .type{
-    background:linear-gradient(to bottom,#333,#555);
+    max-width: 1400px;
+    margin: auto;
     padding-bottom: 5em;
 }
 .type .wrap{
@@ -266,10 +276,9 @@
     width: 70%;
     z-index: 1;
 }
-
-
 .product{
-    background:linear-gradient(to bottom,#555,#333);
+    max-width: 1400px;
+    margin: auto;
     padding-bottom: 10em;
 }
 .product .wrap{
@@ -348,12 +357,13 @@
 }
 
 .cardlist h3{
-    padding: 5px 5px 10px;
+    height: 60px;
     text-align: start;
     font-size: 16px;
     line-height: 25px;
     color: #fff;
     letter-spacing: 1px;
+    box-sizing: border-box;
 }
 .cardlist .card_used  h4{
     text-align: start;
@@ -399,9 +409,7 @@
     color: #222;
     background-color: #fff;
  }
-
 .article{
-    background:linear-gradient(to bottom,#333,#444);
     padding-bottom: 10em;
 }
 .article .wrap{
@@ -545,8 +553,13 @@
     text-align: center;
     color: #fff1;
 }
-.filter{
+.BELIEFPAGE{
+    width: 100%;
     background: linear-gradient(to bottom,#111,#333);
+}
+.filter{
+    width: 1400px;
+    margin: auto;
     display: flex;
     padding:0 5% 0;
 }
@@ -606,12 +619,13 @@
 .overview li a:hover{
     color:#E07048;
 }
-
-/* detail */
-.productdetail{
+.DETAILPAGE{
     width: 100%;
-    height: 100%;
     background: linear-gradient(to bottom,#111,#333);
+}
+.productdetail{
+    max-width: 1600px;
+    margin: auto;
     position: relative;
 }
 .productdetail::before{
@@ -633,9 +647,30 @@
     margin: auto;
     box-sizing: border-box;
     border-bottom: 1px solid #ddd3;
+    position: relative;
+}
+.productdetail .wrap .breadpath{
+    position: absolute;
+    top: 15%;
+}
+.productdetail .wrap .breadpath ol{
+    display: flex;
+}
+.productdetail .wrap .breadpath ol li{
+    color: #fff;
+    list-style: none;
+    flex-shrink: 0;
+}
+.productdetail .wrap .breadpath ol li a{
+    text-decoration: none;
+    color: #ddd6;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.productdetail .wrap .breadpath ol li a:hover{
+    color: #E07048;
 }
 .productdetail .wrap .photo{
-    margin: auto;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -768,9 +803,13 @@
     color: #E07048;
     text-align: center;
 }
-.articlepage{
+.ARTICLEPAGE{
     width: 100%;
     background: linear-gradient(to bottom right,#222,#666);
+}
+.articlepage{
+    width: 1400px;
+    margin: auto;
     justify-content: center;
     display: flex;
 }
@@ -946,9 +985,13 @@
     padding-right: 1em;
     box-sizing: border-box;
 }
-.portfolio{
+.PORTFOLIOPAGE{
     width: 100%;
     background: linear-gradient(to bottom right,#222,#666);
+}
+.portfolio{
+    max-width: 1400px;
+    margin: auto;
 }
 .portfolio .wrap{
     width: 90%;
@@ -1029,22 +1072,26 @@
 .overlay p{
     color: #fff;
 }
-.map{
+.MAPPAGE{
     width: 100%;
     background: linear-gradient(to bottom right,#222,#666);
+}
+.map{
+    max-width: 1400px;
+    margin: auto;
     display: flex;
-    padding-top: 5%;
+    padding-top: 5%;    
     justify-content: center ;
     align-items: center;
+    flex-direction: row-reverse;
 }
 .map .location{
     display: flex;
     padding: 1em 2em;
     box-sizing: border-box;
     /* background: linear-gradient(to bottom right,#fff3,#6663); */
-    border-radius: 30px;
 }
-.map .location .mark select{
+.map .location  select{
     font-size: 20px;
     margin-top: 20%;
     padding: 5px;
@@ -1053,34 +1100,36 @@
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.89);
 }
-.map .location .mark .icon img{
+.map .location .select .icon img{
     display: block;
     flex-wrap: wrap;
     height: 35px;
 }
-.map .location .mark .icon{
+.map .location .select .icon{
     display: flex;
     align-items: center;
     padding-top: 1.5em;
 }
-.map .location .mark .icon p{
+.map .location .select .icon p{
     padding-left: 5%;
     color: #ddd;
     font-size: 16px;
+    font-weight: bold;
 }
 .map .location option{
     font-size: 16px;
     color: #444;
 }
-.locationradio{
+.locationchoose{
     display: none;
 }
 .map .location .item{
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .map .location .item .bgcmap{
-    width: 100%;
-    box-sizing: border-box;
+    width: 80%;
 }
 .day p,.night p,.daytonight p{
     padding:5px;
@@ -1094,12 +1143,12 @@
     height: 35px;
     cursor: pointer;
 }
-.day img:hover,.night img:hover,.daytonight img:hover{
-    transform: scale(1.1);
-}
 .locationmark label{
     display: flex;
     flex-shrink: 0;
+}
+.locationmark label:hover{
+    transform: scale(1.1);
 }
 .map .hotel{
     position: absolute;
@@ -1114,7 +1163,7 @@
 .map .riverbank{
     position: absolute;
     top: 58%;
-    left:22%;
+    left:25%;
 }
 .map .taipei101{
     position: absolute;
@@ -1156,26 +1205,24 @@
     top:35%;
     left:35%;
 }
-.map .card_group {
+.map .card {
     width: 40%;
     /* background:linear-gradient(to bottom,#ddd8,#ddd5 ); */
     /* border: 5px solid #ddd; */
     /* box-shadow: 0 0 10px #222; */
-    border-radius: 20px;
     margin-left: 1%;
-    padding: 1.5em;
     box-sizing: border-box;
+    display: none;
 }
-
-#riverbank:checked .cardriverbank{
-    opacity: 1;
-    transition: 1s;
+#riverbank:checked ~ .cardriverbank{
+    display: block; 
 }
-
-
+#hotel:checked ~ .cardhotel{
+    display: block;
+}
 .map .card h2{
     text-align: center;
-    padding: 1em 0 0.5em;
+    padding: 0.5em 0;
     color:#fff;
     font-size: 30px;
 }
@@ -1185,6 +1232,10 @@
 .map .card h2:nth-child(3){
    border-top: 2px solid #8888;
 }
+.map .card p{
+    flex-shrink: 0;
+ }
+ 
 .map .list{
     width: 100%;
     display: flex;
@@ -1200,15 +1251,17 @@
 }
 .map .list .item{
     width: 50%;
-    align-items: center;
 }
 .map .list .item .pic{
     width: 80%;
-    border-radius: 10px;
+    height: 70%;
     overflow: hidden;
     margin: auto;
+    flex-grow: 1;
+    border-radius: 10px;
 }
 .map .list .item .pic img{
+    height: 100%;
     width: 100%;
 }
 .map .list .item .txt{
@@ -1219,7 +1272,6 @@
 .map .list .item .txt h3{
     color: #fff;
     font-size: 20px;
-    padding: 5px 0px;
 }
 .map .list .item .txt p{
     color: #ddd;
@@ -1227,15 +1279,21 @@
 }
 /* background:linear-gradient(to left,#216D94,#5f9dbe);
 background:linear-gradient(to right,#E07048,#d3947d); */
-
 .map .equipment .item{
     display: flex;
     align-items: center;
+    width: 100%;
 }
-.map .equipment .pic img{
-    width: 300px;
-}
+.map .card .equipment .pic{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+ }
+ .map .card .equipment .pic img{
+    width: 100%;
+ }
 .map .equipment .txt{
+    width: 50%;
     position: relative;
 }
 .map .equipment .txt h3{
@@ -1262,10 +1320,13 @@ background:linear-gradient(to right,#E07048,#d3947d); */
     color: #fff;
     background-color: #E07048;
  }
-
-.chatbox{
+.CHATPAGE{
     width: 100%;
     background: linear-gradient(to bottom right,#222,#666);
+}
+.chatbox{
+    max-width: 1400px;
+    margin: auto;    
     display: flex;
     padding-top: 5%;
     justify-content: center ;
